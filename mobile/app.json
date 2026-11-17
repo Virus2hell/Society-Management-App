@@ -14,16 +14,20 @@
     },
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.example.societymanager"
+      "bundleIdentifier": "com.atharva.societymanager"
     },
     "android": {
-      "package": "com.example.societymanager",
+      "package": "com.atharva.societymanager",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -50,6 +54,17 @@
           "color": "#2563EB"
         }
       ]
-    ]
+    ],
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "a73d4d1f-e912-4c06-aac4-eaea17a916f3"
+      }
+    },
+    "owner": "atharva269"
   }
 }
