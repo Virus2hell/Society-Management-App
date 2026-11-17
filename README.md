@@ -217,7 +217,6 @@ society-app/
 >
 > The API runs on Render's free tier, so if nobody has used it for a while, the **first request takes about 50 seconds** while the server wakes up.
 
-Want to run it locally or deploy your own copy? See the **[Setup & Developer Guide](docs/SETUP.md)**.
 
 
 
