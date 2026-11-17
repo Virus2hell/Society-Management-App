@@ -1,0 +1,19 @@
+# OPTIONAL: run PostgreSQL on your own computer with Docker Desktop.
+#   docker compose up -d
+# then in backend/.env:
+#   DATABASE_URL=postgresql://postgres:postgres@localhost:5432/society
+# (You can skip this and use a free Neon database instead.)
+services:
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: society
+    ports:
+      - "5432:5432"
+    volumes:
+      - society-db:/var/lib/postgresql/data
+volumes:
+  society-db:
